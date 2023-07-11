@@ -1,0 +1,23 @@
+<%- include("Partials/header"); -%>
+    <h1>Compose</h1>
+    <form class="" action="/compose" method="post">
+        <div class="mb-3">
+            <label class="form-label">Title</label>
+            <input class="form-control" type="text" name="postTitle">
+
+        </div>
+        <div class="mb-3">
+            <label class="form-label">post</label>
+            <textarea class="form-control" rows="8" cols="30" name="postbody"></textarea>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+
+
+        <button class="btn btn-primary" type="submit" name="button">Publish</button>
+
+    </form>
+
+    <%- include("Partials/footer"); -%>
